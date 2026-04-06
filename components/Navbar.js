@@ -9,7 +9,7 @@ export default function Navbar() {
             <Link href="/about" className="hover:text-blue-600 cursor-pointer">About</Link>
           </li>
           <li>
-            <Link href="/projects" className="hover:text-blue-600 cursor-pointer">About</Link>
+            <Link href="/projects" className="hover:text-blue-600 cursor-pointer">Project</Link>
           </li>
         </ul>
       </nav>
