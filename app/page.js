@@ -1,23 +1,27 @@
 export default function Home() {
   return (
-    <div className="bg-slate-900 h-screen flex flex-col items-center justify-center p-4">
+    // 1. Pura Page (Flexbox se har cheez center mein)
+    <div className="flex flex-col min-h-screen bg-gray-100">
       
-      {/* Yeh Main White Box Hai */}
-      <div className="bg-white p-10 rounded-3xl shadow-2xl text-center max-w-md">
-        
-        <h1 className="text-3xl font-black text-blue-600 mb-4">
-          Tailwind is Awesome!
-        </h1>
-        
-        <p className="text-gray-500 text-lg">
-          Main Next.js seekh raha hoon aur ye mera pehla styled component hai.
-        </p>
-        
-        <button className="mt-6 bg-blue-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-800 transition-all shadow-lg">
-          Click Me!
-        </button>
+      {/* 2. Header (Simple Navigation Bar) */}
+      <nav className="bg-white p-4 shadow-sm flex justify-between items-center px-10">
+        <h1 className="text-xl font-bold text-blue-600">My Portfolio</h1>
+        <ul className="flex gap-6 text-gray-600 font-medium">
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects</li>
+        </ul>
+      </nav>
 
-      </div>
+      {/* 3. Main Content Area */}
+      <main className="flex-grow flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-4xl font-extrabold text-gray-900">
+            I am a Developer
+          </h2>
+          <p className="text-gray-500 mt-2">Main Next.js aur Tailwind seekh raha hoon.</p>
+        </div>
+      </main>
 
     </div>
   );
