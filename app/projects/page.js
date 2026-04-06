@@ -1,30 +1,30 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import ProjectCard from "@/components/ProjectCard"; // 1. Card ko bulaya
 
 export default function Projects() {
   const myProjects = [
-    { id: 1, title: "Dental Clinic", desc: "Built with WordPress" },
-    { id: 2, title: "Foster Care Site", desc: "Custom ACF Project" },
-    { id: 3, title: "Next.js Portfolio", desc: "My first React app" },
+    { id: 1, title: "Dental Clinic", desc: "WordPress and ACF Expert work" },
+    { id: 2, title: "Foster Care", desc: "UK Based client project" },
+    { id: 3, title: "Next.js App", desc: "Learning Props and Components" },
   ];
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <Navbar />
-      <main className="flex-grow p-10 bg-gray-50">
-        <h1 className="text-3xl font-bold mb-8">My Work</h1>
+      <main className="p-10">
+        <h1 className="text-3xl font-bold mb-8">My Projects</h1>
         
-        {/* Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {myProjects.map((project) => (
-            <div key={project.id} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition-all border-t-4 border-blue-500">
-              <h2 className="text-xl font-bold">{project.title}</h2>
-              <p className="text-gray-600 mt-2">{project.desc}</p>
-              <button className="mt-4 text-blue-600 font-semibold text-sm">View Details →</button>
-            </div>
+            // 2. Parcel bheja (title aur desc)
+            <ProjectCard 
+              key={project.id} 
+              title={project.title} 
+              desc={project.desc} 
+            />
           ))}
         </div>
-
       </main>
       <Footer />
     </div>
