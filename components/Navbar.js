@@ -8,7 +8,9 @@ export default function Navbar() {
           <li>
             <Link href="/about" className="hover:text-blue-600 cursor-pointer">About</Link>
           </li>
-          <li>Projects</li>
+          <li>
+            <Link href="/projects" className="hover:text-blue-600 cursor-pointer">About</Link>
+          </li>
         </ul>
       </nav>
     );
