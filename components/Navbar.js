@@ -11,6 +11,7 @@ export default function Navbar() {
           <li>
             <Link href="/projects" className="hover:text-blue-600 cursor-pointer">Project</Link>
           </li>
+          <li><Link href="/contact" className="text-blue-500 font-bold">Contact</Link></li>
         </ul>
       </nav>
     );
