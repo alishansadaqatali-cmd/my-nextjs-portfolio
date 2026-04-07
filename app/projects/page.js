@@ -8,7 +8,7 @@ export default function Projects() {
       id: 1, 
       title: "Dental Clinic", 
       desc: "WordPress and ACF Expert work",
-      imgUrl: "/dental.jpg" // Agar image ka naam dental.jpg hai
+      imgUrl: "/dental.png" // Agar image ka naam dental.jpg hai
     },
     { 
       id: 2, 
